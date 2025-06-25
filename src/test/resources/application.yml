@@ -1,0 +1,10 @@
+spring:
+  data:
+    mongodb:
+      database: testdb_for_tests
+      # port: 0 # Let Spring Boot pick a random free port for tests
+de:
+  flapdoodle:
+    mongodb:
+      embedded:
+        version: 6.0.8

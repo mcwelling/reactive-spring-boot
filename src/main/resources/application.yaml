@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      database: myembeddeddb
+      # port: 27017 # Uncomment and set a fixed port if needed
+de:
+  flapdoodle:
+    mongodb:
+      embedded:
+        version: 6.0.8
+
+logging:
+  level:
+    org:
+      springframework:
+        boot:
+          autoconfigure:
+            mongo:
+              embedded: DEBUG
+      mongodb: INFO
+    de:
+      flapdoodle:
+        embed:
+          mongo: DEBUG
